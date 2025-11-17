@@ -4,11 +4,13 @@ bfs algorithm grid to find shortest path
 
 ## How to run
 
-1. Install dependencies and run tests:
+1. Install dependencies
 
    `npm i`
 
-Run `npm test` to execute the sample grids and see the outputs in the console.
+2. Run tests
+
+   `npm test`
 
 ## Assumptions
 
@@ -52,19 +54,17 @@ S → (0,1) → (0,2) → (1,2) → (2,2) -> (2,3) -> (1,3) = 6 steps.
    "S#H"
    ]
 
-3. Single-row grid  
+3. Single-row grid → answer 2
    Grid:
    [
    "S.H"
-   ]  
-   Output: 2
+   ]
 
-4. Single-column grid  
+4. Single-column grid → answer 3
    Grid:
    [
    "S",
    ".",
    ".",
    "H"
-   ]  
-   Output: 3
+   ]
