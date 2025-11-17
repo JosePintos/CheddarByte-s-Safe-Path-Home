@@ -48,31 +48,35 @@ S → (0,1) → (0,2) → (1,2) → (2,2) -> (2,3) -> (1,3) = 6 steps.
      To represent this scenario during testing, I use the following assumption:
      Start and Home occupy the same logical coordinates when the grid is a 1×1 grid containing either S or H.
 
-2. No path exists → answer -1  
+2. No path exists
    Grid:
    [
    "S#H"
-   ]
+   ].
+   Output: -1
 
-3. Single-row grid → answer 2
+3. Single-row grid
    Grid:
    [
    "S.H"
-   ]
+   ].
+   Output: 2
 
-4. Single-column grid → answer 3
+4. Single-column grid
    Grid:
    [
    "S",
    ".",
    ".",
    "H"
-   ]
+   ].
+   Output: 3
 
-5. Starting point not at top left corner -> 6
+5. Starting point not at top left corner
    Grid:
    [
    "H.#.",
    "..#S",
    "...."
-   ]
+   ].
+   Output: 6
