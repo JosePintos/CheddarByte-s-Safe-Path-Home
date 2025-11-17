@@ -1,4 +1,4 @@
-# CheddarByte-s-Safe-Path-Home-
+# CheddarByte-s-Safe-Path-Home
 
 bfs algorithm grid to find shortest path
 
@@ -36,3 +36,35 @@ Output:
 
 Explanation: One shortest path is  
 S → (0,1) → (0,2) → (1,2) → (2,2) -> (2,3) -> (1,3) = 6 steps.
+
+## Edge Cases
+
+1. S and H in the same cell → answer 0
+
+   - Logically: start is already at home.
+   - For this edge case, the problem does not define a format that allows a single cell to contain both S and H simultaneously.
+     To represent this scenario during testing, I use the following assumption:
+     Start and Home occupy the same logical coordinates when the grid is a 1×1 grid containing either S or H.
+
+2. No path exists → answer -1  
+   Grid:
+   [
+   "S#H"
+   ]
+
+3. Single-row grid  
+   Grid:
+   [
+   "S.H"
+   ]  
+   Output: 2
+
+4. Single-column grid  
+   Grid:
+   [
+   "S",
+   ".",
+   ".",
+   "H"
+   ]  
+   Output: 3
