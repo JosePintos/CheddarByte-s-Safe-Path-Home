@@ -68,3 +68,11 @@ S → (0,1) → (0,2) → (1,2) → (2,2) -> (2,3) -> (1,3) = 6 steps.
    ".",
    "H"
    ]
+
+5. Starting point not at top left corner -> 6
+   Grid:
+   [
+   "H.#.",
+   "..#S",
+   "...."
+   ]
